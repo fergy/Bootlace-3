@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2F9A2861381A07B00D6CAF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9A2851381A07B00D6CAF8 /* UIKit.framework */; };
+		D2F9A2881381A07B00D6CAF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9A2871381A07B00D6CAF8 /* Foundation.framework */; };
+		D2F9A28A1381A07B00D6CAF8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9A2891381A07B00D6CAF8 /* CoreGraphics.framework */; };
+		D2F9A2901381A07B00D6CAF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2F9A28E1381A07B00D6CAF8 /* InfoPlist.strings */; };
+		D2F9A2931381A07B00D6CAF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A2921381A07B00D6CAF8 /* main.m */; };
+		D2F9A2961381A07B00D6CAF8 /* BootlaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A2951381A07B00D6CAF8 /* BootlaceAppDelegate.m */; };
+		D2F9A2991381A07B00D6CAF8 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2F9A2971381A07B00D6CAF8 /* MainWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D2F9A2811381A07B00D6CAF8 /* Bootlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bootlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2F9A2851381A07B00D6CAF8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D2F9A2871381A07B00D6CAF8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2F9A2891381A07B00D6CAF8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2F9A28D1381A07B00D6CAF8 /* Bootlace-Info.plist */ = {isa = PBXFileReference; path = "Bootlace-Info.plist"; sourceTree = "<group>"; };
+		D2F9A28F1381A07B00D6CAF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D2F9A2911381A07B00D6CAF8 /* Bootlace-Prefix.pch */ = {isa = PBXFileReference; path = "Bootlace-Prefix.pch"; sourceTree = "<group>"; };
+		D2F9A2921381A07B00D6CAF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2F9A2941381A07B00D6CAF8 /* BootlaceAppDelegate.h */ = {isa = PBXFileReference; path = BootlaceAppDelegate.h; sourceTree = "<group>"; };
+		D2F9A2951381A07B00D6CAF8 /* BootlaceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BootlaceAppDelegate.m; sourceTree = "<group>"; };
+		D2F9A2981381A07B00D6CAF8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2F9A27E1381A07B00D6CAF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F9A2861381A07B00D6CAF8 /* UIKit.framework in Frameworks */,
+				D2F9A2881381A07B00D6CAF8 /* Foundation.framework in Frameworks */,
+				D2F9A28A1381A07B00D6CAF8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D2F9A2761381A07B00D6CAF8 = {
+			isa = PBXGroup;
+			children = (
+				D2F9A28B1381A07B00D6CAF8 /* Bootlace */,
+				D2F9A2841381A07B00D6CAF8 /* Frameworks */,
+				D2F9A2821381A07B00D6CAF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D2F9A2821381A07B00D6CAF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2F9A2811381A07B00D6CAF8 /* Bootlace.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2F9A2841381A07B00D6CAF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D2F9A2851381A07B00D6CAF8 /* UIKit.framework */,
+				D2F9A2871381A07B00D6CAF8 /* Foundation.framework */,
+				D2F9A2891381A07B00D6CAF8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2F9A28B1381A07B00D6CAF8 /* Bootlace */ = {
+			isa = PBXGroup;
+			children = (
+				D2F9A2941381A07B00D6CAF8 /* BootlaceAppDelegate.h */,
+				D2F9A2951381A07B00D6CAF8 /* BootlaceAppDelegate.m */,
+				D2F9A2971381A07B00D6CAF8 /* MainWindow.xib */,
+				D2F9A28C1381A07B00D6CAF8 /* Supporting Files */,
+			);
+			path = Bootlace;
+			sourceTree = "<group>";
+		};
+		D2F9A28C1381A07B00D6CAF8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2F9A28D1381A07B00D6CAF8 /* Bootlace-Info.plist */,
+				D2F9A28E1381A07B00D6CAF8 /* InfoPlist.strings */,
+				D2F9A2911381A07B00D6CAF8 /* Bootlace-Prefix.pch */,
+				D2F9A2921381A07B00D6CAF8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2F9A2801381A07B00D6CAF8 /* Bootlace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2F9A29C1381A07B00D6CAF8 /* Build configuration list for PBXNativeTarget "Bootlace" */;
+			buildPhases = (
+				D2F9A27D1381A07B00D6CAF8 /* Sources */,
+				D2F9A27E1381A07B00D6CAF8 /* Frameworks */,
+				D2F9A27F1381A07B00D6CAF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bootlace;
+			productName = Bootlace;
+			productReference = D2F9A2811381A07B00D6CAF8 /* Bootlace.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2F9A2781381A07B00D6CAF8 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D2F9A27B1381A07B00D6CAF8 /* Build configuration list for PBXProject "Bootlace" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D2F9A2761381A07B00D6CAF8;
+			productRefGroup = D2F9A2821381A07B00D6CAF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2F9A2801381A07B00D6CAF8 /* Bootlace */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2F9A27F1381A07B00D6CAF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F9A2901381A07B00D6CAF8 /* InfoPlist.strings in Resources */,
+				D2F9A2991381A07B00D6CAF8 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2F9A27D1381A07B00D6CAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2F9A2931381A07B00D6CAF8 /* main.m in Sources */,
+				D2F9A2961381A07B00D6CAF8 /* BootlaceAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2F9A28E1381A07B00D6CAF8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F9A28F1381A07B00D6CAF8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D2F9A2971381A07B00D6CAF8 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2F9A2981381A07B00D6CAF8 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2F9A29A1381A07B00D6CAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2F9A29B1381A07B00D6CAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		D2F9A29D1381A07B00D6CAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bootlace/Bootlace-Prefix.pch";
+				INFOPLIST_FILE = "Bootlace/Bootlace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D2F9A29E1381A07B00D6CAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bootlace/Bootlace-Prefix.pch";
+				INFOPLIST_FILE = "Bootlace/Bootlace-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2F9A27B1381A07B00D6CAF8 /* Build configuration list for PBXProject "Bootlace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F9A29A1381A07B00D6CAF8 /* Debug */,
+				D2F9A29B1381A07B00D6CAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2F9A29C1381A07B00D6CAF8 /* Build configuration list for PBXNativeTarget "Bootlace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2F9A29D1381A07B00D6CAF8 /* Debug */,
+				D2F9A29E1381A07B00D6CAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D2F9A2781381A07B00D6CAF8 /* Project object */;
+}
