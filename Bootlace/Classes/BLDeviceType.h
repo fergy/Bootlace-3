@@ -19,5 +19,6 @@ typedef enum
     IPAD1_1,   // 1G
     IPAD2_1,   // 2G WiFi
     IPAD2_2,   // 2G GSM
-    IPAD2_3    // 2G CDMA
+    IPAD2_3,   // 2G CDMA
+    ATV2_1     // AppleTV 2G
 } BLDeviceType;

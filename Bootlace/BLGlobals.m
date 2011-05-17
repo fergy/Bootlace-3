@@ -7,7 +7,6 @@
 //
 
 #import "BLGlobals.h"
-#import "BLDeviceType.h"
 
 @implementation BLGlobals
 

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BLGlobals.h"
 
 
 @interface BLUtilities : NSObject {
