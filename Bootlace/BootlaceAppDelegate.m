@@ -13,6 +13,7 @@
 #import "QuickBootController.h"
 #import "SettingsController.h"
 #import "FeedItemController.h"
+#import "BLWebController.h"
 
 @implementation BootlaceAppDelegate
 
@@ -24,7 +25,7 @@
     
 	TTURLMap* map = navigator.URLMap;
     
-	[map from:@"*" toViewController:[TTWebController class]];
+	[map from:@"*" toViewController:[BLWebController class]];
     [map from:@"bl://tabBar" toSharedViewController:[TabBarController class]];
     [map from:@"bl://installList" toSharedViewController:[InstallListController class]];
     [map from:@"bl://quickboot" toSharedViewController:[QuickBootController class]];

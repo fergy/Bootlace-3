@@ -16,6 +16,7 @@
 		320CC833B8AF0ACFD35E6225 /* libThree20Style.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320CC833B8AF0ACFD35E6224 /* libThree20Style.a */; };
 		320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D7DCCE32703ACAB9A45E4 /* libThree20.a */; };
 		320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320F2C48872C2E2C4DF86204 /* libThree20UI.a */; };
+		D220B3741382B159005B510A /* BLWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = D220B3731382B159005B510A /* BLWebController.m */; };
 		D22AFB2F138269FE005AACFE /* BLStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D22AFB2E138269FE005AACFE /* BLStylesheet.m */; };
 		D22AFB321382739C005AACFE /* centerbuttonon.png in Resources */ = {isa = PBXBuildFile; fileRef = D22AFB301382739C005AACFE /* centerbuttonon.png */; };
 		D22AFB331382739C005AACFE /* centerbuttonon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22AFB311382739C005AACFE /* centerbuttonon@2x.png */; };
@@ -222,6 +223,9 @@
 		320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Style.xcodeproj; path = 3rdparty/three20/src/Three20Style/Three20Style.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = 3rdparty/three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = 3rdparty/three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D220B3721382B159005B510A /* BLWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLWebController.h; path = Classes/BLWebController.h; sourceTree = "<group>"; };
+		D220B3731382B159005B510A /* BLWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLWebController.m; path = Classes/BLWebController.m; sourceTree = "<group>"; };
+		D220B3751382B27B005B510A /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = 3rdparty/SynthesizeSingleton.h; sourceTree = SOURCE_ROOT; };
 		D22AFB2D138269FE005AACFE /* BLStylesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLStylesheet.h; path = Classes/BLStylesheet.h; sourceTree = "<group>"; };
 		D22AFB2E138269FE005AACFE /* BLStylesheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLStylesheet.m; path = Classes/BLStylesheet.m; sourceTree = "<group>"; };
 		D22AFB301382739C005AACFE /* centerbuttonon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centerbuttonon.png; sourceTree = "<group>"; };
@@ -409,12 +413,15 @@
 		D261DEF31381AED800E70E49 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D220B3751382B27B005B510A /* SynthesizeSingleton.h */,
 				D22AFB4C138283B8005AACFE /* TTTableViewDelegate+URLAdditions.h */,
 				D22AFB4D138283B9005AACFE /* TTTableViewDelegate+URLAdditions.m */,
 				D261DEDA1381ABC400E70E49 /* TabBarController.h */,
 				D261DEDB1381ABC400E70E49 /* TabBarController.m */,
 				D22AFB2D138269FE005AACFE /* BLStylesheet.h */,
 				D22AFB2E138269FE005AACFE /* BLStylesheet.m */,
+				D220B3721382B159005B510A /* BLWebController.h */,
+				D220B3731382B159005B510A /* BLWebController.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -778,6 +785,7 @@
 				D22AFB4E138283B9005AACFE /* TTTableViewDelegate+URLAdditions.m in Sources */,
 				D2CD97DD13828C5D0028979F /* FeedItemController.m in Sources */,
 				D7E476D21382ADA3004C0072 /* Globals.m in Sources */,
+				D220B3741382B159005B510A /* BLWebController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
