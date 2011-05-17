@@ -8,24 +8,26 @@
 
 #import <Foundation/Foundation.h>
 #import "SynthesizeSingleton.h"
-
+#import "BLDeviceType.h"
 
 @interface BLGlobals : NSObject {
     
     //Compatibility vars
-    bool deviceCompatible;
-    bool oldBootrom;
+    BOOL deviceCompatible;
+    BOOL oldBootrom;
     
     NSString *device;
     NSString *deviceName;
+    BLDeviceType deviceType;
 }
 
 + (BLGlobals *)sharedBLGlobals;
 
-@property (nonatomic, assign) bool deviceCompatible;
-@property (nonatomic, assign) bool oldBootrom;
+@property (nonatomic, assign) BOOL deviceCompatible;
+@property (nonatomic, assign) BOOL oldBootrom;
 
 @property (nonatomic, retain) NSString *device;
 @property (nonatomic, retain) NSString *deviceName;
+@property (nonatomic, assign) BLDeviceType deviceType;
 
 @end

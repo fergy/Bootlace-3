@@ -7,12 +7,12 @@
 //
 
 #import "BLGlobals.h"
-
+#import "BLDeviceType.h"
 
 @implementation BLGlobals
 
 SYNTHESIZE_SINGLETON_FOR_CLASS(BLGlobals);
 
-@synthesize deviceCompatible, oldBootrom, device, deviceName;
+@synthesize deviceCompatible, oldBootrom, device, deviceName, deviceType;
 
 @end

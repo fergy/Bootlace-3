@@ -209,6 +209,7 @@
 		D261DF0C1381BBB700E70E49 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		D261DF121381BCF500E70E49 /* centerbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centerbutton.png; sourceTree = "<group>"; };
 		D261DF131381BCF500E70E49 /* centerbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "centerbutton@2x.png"; sourceTree = "<group>"; };
+		D29E4DA51382C0DA0080CD50 /* BLDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLDeviceType.h; path = Classes/BLDeviceType.h; sourceTree = "<group>"; };
 		D2CD97DB13828C5D0028979F /* FeedItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedItemController.h; path = Classes/FeedItemController.h; sourceTree = "<group>"; };
 		D2CD97DC13828C5D0028979F /* FeedItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedItemController.m; path = Classes/FeedItemController.m; sourceTree = "<group>"; };
 		D2F9A2811381A07B00D6CAF8 /* Bootlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bootlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -513,6 +514,7 @@
 				D7E476D11382ADA3004C0072 /* BLGlobals.m */,
 				D7FB0CE11382BCA00008DA54 /* BLUtilities.h */,
 				D7FB0CE21382BCA00008DA54 /* BLUtilities.m */,
+				D29E4DA51382C0DA0080CD50 /* BLDeviceType.h */,
 			);
 			name = Common;
 			sourceTree = "<group>";
