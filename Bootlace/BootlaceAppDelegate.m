@@ -34,9 +34,9 @@
     [map from:@"bl://viewfeeditem" toSharedViewController:[FeedItemController class]];
     
     // Check pre-requisites here - show wizard if compatible & firstrun, if incompatible show canhaznot screen, otherwise run the condition below
-    BLGlobals *sharedGlobals = [BLGlobals sharedGlobals];
+    BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
     
-    sharedGlobals.deviceCompatible = [[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"];
+    sharedBLGlobals.deviceCompatible = [[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"];
     
     if(!NO) {
         //Do checks

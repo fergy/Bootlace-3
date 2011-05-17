@@ -19,7 +19,7 @@
     NSString *device;
 }
 
-+ (BLGlobals *)sharedGlobals;
++ (BLGlobals *)sharedBLGlobals;
 
 @property (nonatomic, assign) bool deviceCompatible;
 @property (nonatomic, assign) bool oldBootrom;

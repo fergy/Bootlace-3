@@ -11,8 +11,8 @@
 
 @implementation BLGlobals
 
-@synthesize deviceCompatible, oldBootrom, device;
-
 SYNTHESIZE_SINGLETON_FOR_CLASS(BLGlobals);
+
+@synthesize deviceCompatible, oldBootrom, device;
 
 @end
