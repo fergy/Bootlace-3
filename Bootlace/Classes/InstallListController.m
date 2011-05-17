@@ -10,6 +10,10 @@
 #import "NewsDataSource.h"
 #import "TTTableViewDelegate+URLAdditions.h"
 
+static NSString* kLoremIpsum = @"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\
+exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
 @implementation InstallListController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -44,7 +48,24 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)createModel {
     //self.dataSource = [[[OSDataSource alloc] initWithDevice:@"iPhone1,2"] autorelease];
-    self.dataSource = [[TTSectionedDataSource alloc] init];
+    
+    self.dataSource = [TTSectionedDataSource dataSourceWithObjects:
+                       @"iDroid",
+                       [TTTableMessageItem itemWithTitle:@"Pepparkaka 11.04" caption:@"Android 2.3.2"
+                                                    text:kLoremIpsum timestamp:[NSDate date]
+                                                imageURL:@"bundle://idroid.png" URL:@"tt://tableItemTest"],
+                       [TTTableMessageItem itemWithTitle:@"MoJo 1.0.4" caption:@"Android 2.2.3"
+                                                    text:kLoremIpsum timestamp:[NSDate date]
+                                                imageURL:@"bundle://idroid.png" URL:@"tt://tableItemTest"],
+                       @"iX",
+                       [TTTableMessageItem itemWithTitle:@"iX SHR" caption:@"SHR something"
+                                                    text:kLoremIpsum timestamp:[NSDate date]
+                                                imageURL:@"bundle://ix.png" URL:@"tt://tableItemTest"],
+                       @"OpeniBoot",
+                       [TTTableMessageItem itemWithTitle:@"OpeniBoot" caption:@"v0.3"
+                                                    text:kLoremIpsum timestamp:[NSDate date]
+                                                imageURL:@"bundle://ix.png" URL:@"tt://tableItemTest"],
+                       nil];
 }
 
 
