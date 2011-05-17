@@ -29,6 +29,7 @@
 		D22AFB471382831C005AACFE /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D22AFB461382831C005AACFE /* FeedItem.m */; };
 		D22AFB4B13828339005AACFE /* NewsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D22AFB4A13828339005AACFE /* NewsDataSource.m */; };
 		D22AFB4E138283B9005AACFE /* TTTableViewDelegate+URLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D22AFB4D138283B9005AACFE /* TTTableViewDelegate+URLAdditions.m */; };
+		D23238F21382B67200330569 /* BLWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23238F11382B67200330569 /* BLWebController.m */; };
 		D255F6DC1382863900B2682B /* libextThree20XML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D255F6DB1382863900B2682B /* libextThree20XML.a */; };
 		D261DEDC1381ABC400E70E49 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D261DEDB1381ABC400E70E49 /* TabBarController.m */; };
 		D261DEF71381AF5600E70E49 /* InstallListController.m in Sources */ = {isa = PBXBuildFile; fileRef = D261DEF61381AF5600E70E49 /* InstallListController.m */; };
@@ -191,6 +192,8 @@
 		D22AFB4A13828339005AACFE /* NewsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDataSource.m; sourceTree = "<group>"; };
 		D22AFB4C138283B8005AACFE /* TTTableViewDelegate+URLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTTableViewDelegate+URLAdditions.h"; sourceTree = "<group>"; };
 		D22AFB4D138283B9005AACFE /* TTTableViewDelegate+URLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TTTableViewDelegate+URLAdditions.m"; sourceTree = "<group>"; };
+		D23238F01382B67200330569 /* BLWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLWebController.h; path = Classes/BLWebController.h; sourceTree = "<group>"; };
+		D23238F11382B67200330569 /* BLWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLWebController.m; path = Classes/BLWebController.m; sourceTree = "<group>"; };
 		D255F6CD1382861E00B2682B /* extThree20XML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = extThree20XML.xcodeproj; path = 3rdparty/three20/src/extThree20XML/extThree20XML.xcodeproj; sourceTree = "<group>"; };
 		D255F6DB1382863900B2682B /* libextThree20XML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libextThree20XML.a; sourceTree = SOURCE_ROOT; };
 		D261DEDA1381ABC400E70E49 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = Classes/TabBarController.h; sourceTree = "<group>"; };
@@ -361,6 +364,8 @@
 		D261DEF31381AED800E70E49 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D23238F01382B67200330569 /* BLWebController.h */,
+				D23238F11382B67200330569 /* BLWebController.m */,
 				D22AFB4C138283B8005AACFE /* TTTableViewDelegate+URLAdditions.h */,
 				D22AFB4D138283B9005AACFE /* TTTableViewDelegate+URLAdditions.m */,
 				D261DEDA1381ABC400E70E49 /* TabBarController.h */,
@@ -732,6 +737,7 @@
 				D22AFB4E138283B9005AACFE /* TTTableViewDelegate+URLAdditions.m in Sources */,
 				D2CD97DD13828C5D0028979F /* FeedItemController.m in Sources */,
 				D7E476D21382ADA3004C0072 /* BLGlobals.m in Sources */,
+				D23238F21382B67200330569 /* BLWebController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
