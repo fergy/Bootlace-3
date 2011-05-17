@@ -7,16 +7,30 @@
 //
 
 #import "BootlaceAppDelegate.h"
+#import "TabBarController.h"
+#import "InstallListController.h"
+#import "QuickBootController.h"
+#import "SettingsController.h"
 
 @implementation BootlaceAppDelegate
 
-
-@synthesize window=_window;
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
-    [self.window makeKeyAndVisible];
+    TTNavigator* navigator = [TTNavigator navigator];
+	navigator.persistenceMode = TTNavigatorPersistenceModeAll;
+    
+	TTURLMap* map = navigator.URLMap;
+    
+	[map from:@"*" toViewController:[TTWebController class]];
+    [map from:@"bl://tabBar" toSharedViewController:[TabBarController class]];
+    [map from:@"bl://installList" toSharedViewController:[InstallListController class]];
+    [map from:@"bl://quickboot" toSharedViewController:[QuickBootController class]];
+    [map from:@"bl://settings" toSharedViewController:[SettingsController class]];
+    
+    if (![navigator restoreViewControllers]) {
+		[navigator openURLAction:[TTURLAction actionWithURLPath:@"bl://tabBar"]];
+	}
+    
     return YES;
 }
 
@@ -61,7 +75,6 @@
 
 - (void)dealloc
 {
-    [_window release];
     [super dealloc];
 }
 
