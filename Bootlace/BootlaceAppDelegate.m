@@ -30,7 +30,16 @@
     [map from:@"bl://quickboot" toSharedViewController:[QuickBootController class]];
     [map from:@"bl://settings" toSharedViewController:[SettingsController class]];
     [map from:@"bl://viewfeeditem" toSharedViewController:[FeedItemController class]];
+    
     // Check pre-requisites here - show wizard if compatible & firstrun, if incompatible show canhaznot screen, otherwise run the condition below
+    
+    
+    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"]) {
+        //Do checks
+    } else if([[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"] && [[NSUserDefaults standardUserDefaults] boolForKey:@"OldBootrom"]) {
+        //Check kernel is still patched
+    }
+    
     if (![navigator restoreViewControllers]) {
 		[navigator openURLAction:[TTURLAction actionWithURLPath:@"bl://tabBar"]];
 	}

@@ -45,6 +45,7 @@
 		D2F9A2901381A07B00D6CAF8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2F9A28E1381A07B00D6CAF8 /* InfoPlist.strings */; };
 		D2F9A2931381A07B00D6CAF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A2921381A07B00D6CAF8 /* main.m */; };
 		D2F9A2961381A07B00D6CAF8 /* BootlaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A2951381A07B00D6CAF8 /* BootlaceAppDelegate.m */; };
+		D7E476D21382ADA3004C0072 /* Globals.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E476D11382ADA3004C0072 /* Globals.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -265,6 +266,8 @@
 		D2F9A2921381A07B00D6CAF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2F9A2941381A07B00D6CAF8 /* BootlaceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BootlaceAppDelegate.h; sourceTree = "<group>"; };
 		D2F9A2951381A07B00D6CAF8 /* BootlaceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BootlaceAppDelegate.m; sourceTree = "<group>"; };
+		D7E476D01382ADA3004C0072 /* Globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		D7E476D11382ADA3004C0072 /* Globals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Globals.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +380,8 @@
 			children = (
 				D22AFB4913828339005AACFE /* NewsDataSource.h */,
 				D22AFB4A13828339005AACFE /* NewsDataSource.m */,
+				D7E476D01382ADA3004C0072 /* Globals.h */,
+				D7E476D11382ADA3004C0072 /* Globals.m */,
 			);
 			name = Datasources;
 			sourceTree = "<group>";
@@ -772,6 +777,7 @@
 				D22AFB4B13828339005AACFE /* NewsDataSource.m in Sources */,
 				D22AFB4E138283B9005AACFE /* TTTableViewDelegate+URLAdditions.m in Sources */,
 				D2CD97DD13828C5D0028979F /* FeedItemController.m in Sources */,
+				D7E476D21382ADA3004C0072 /* Globals.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,7 +837,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
@@ -854,7 +860,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
