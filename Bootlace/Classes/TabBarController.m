@@ -15,7 +15,7 @@
     [self setTabURLs:[NSArray arrayWithObjects:
                                                 @"bl://installList",
                                                 @"bl://quickboot",
-                                                @"http://settings",
+                                                @"bl://settings",
                       nil]];
 }
 

@@ -55,9 +55,9 @@
             self.title = NSLocalizedString(@"Packages",nil);
             break;
         case 1:
-            // Change this url to point to the news feed that we havent set up yet
+            // Change this url to point to the news feed that we havent set up yet - irrelevant one here solely because it is well formed (or at least enough for my code to work!)
             self.title = NSLocalizedString(@"News",nil);
-            self.dataSource = [[[NewsDataSource alloc] initWithFeedUrl:@"http://www.idroidproject.org/forum/.xml/?type=rss"] autorelease];
+            self.dataSource = [[[NewsDataSource alloc] initWithFeedUrl:@"http://app.thenursewholovedme.com/feed.xml"] autorelease];
             break;
         case 2:
             self.title = NSLocalizedString(@"Changelogs",nil);

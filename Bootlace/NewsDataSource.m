@@ -36,7 +36,7 @@
 
 	for (FeedItem* item in _feedModel.items) {
 		// Todo: change the image here with something better, check values so that we dont display (null)		
-		NSString* body = [item.description stringByRemovingHTMLTags];
+		NSString* body = [[item.description stringByRemovingHTMLTags] stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
 		TTTableMessageItem* tableRow = [TTTableMessageItem itemWithTitle:item.title 
                                                                  caption:[NSString stringWithFormat:@"Posted by: %@",item.poster]
 																	text:body 
@@ -62,6 +62,22 @@
 	self.items = items;
 
 	TT_RELEASE_SAFELY(items);
+}
+
+- (NSString *)titleForLoading:(BOOL)reloading {
+    if (reloading) {
+        return NSLocalizedString(@"Reloading news feed...",nil);
+    } else {
+        return NSLocalizedString(@"Loading news feed...",nil);
+    }
+}
+
+- (NSString *)titleForEmpty {
+    return NSLocalizedString(@"Apparently, there is no news!",nil);
+}
+
+- (NSString *)titleForError:(NSError *)error {
+    return NSLocalizedString(@"An error occurred fetching the news feed.",nil);
 }
 
 @end

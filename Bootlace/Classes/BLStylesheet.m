@@ -11,24 +11,24 @@
 
 @implementation BLStylesheet
 
-/*- (UIColor*)navigationBarTintColor {
-	return RGBCOLOR(44, 44, 44);
+- (UIColor*)navigationBarTintColor {
+	return RGBCOLOR(105, 149, 0);
 }
 
 -(UIColor*)tabBarTintColor {
-	return RGBCOLOR(72,72,72);
+	return RGBCOLOR(105, 149, 0);
 }
 
-- (UIFont*)font {
+/*- (UIFont*)font {
 	return [UIFont fontWithName:@"AmericanTypewriter" size:14];
-}
+}*/
 
 - (UIColor*)toolbarTintColor {
-	return RGBCOLOR(72,72,72);
+	return RGBCOLOR(105, 149, 0);
 }
 
 - (UIColor*)tableHeaderTintColor {
-	return RGBCOLOR(72,72,72);
+	return RGBCOLOR(105, 149, 0);
 }
 
 - (UIColor*)tableHeaderTextColor {
@@ -42,6 +42,6 @@
 - (UITableViewCellSelectionStyle)tableSelectionStyle {
 	return UITableViewCellSelectionStyleGray;
 }
-*/
+
 
 @end
