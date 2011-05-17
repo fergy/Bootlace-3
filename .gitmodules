@@ -1,6 +1,3 @@
 [submodule "3rdparty/three20"]
 	path = 3rdparty/three20
-	url = git@github.com:nickpack/three20.git
-[submodule "3rdparty/InAppSettingsKit"]
-	path = 3rdparty/InAppSettingsKit
-	url = git://github.com/futuretap/InAppSettingsKit.git
+	url = git://github.com/nickpack/three20.git
