@@ -15,7 +15,7 @@
     [self setTabURLs:[NSArray arrayWithObjects:
                                                 @"bl://installList",
                                                 @"bl://quickboot",
-                                                @"bl://settings",
+                                                @"http://www.idroidproject.org",
                       nil]];
 }
 

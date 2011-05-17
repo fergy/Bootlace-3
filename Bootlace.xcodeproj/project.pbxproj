@@ -218,7 +218,7 @@
 		D2F9A2941381A07B00D6CAF8 /* BootlaceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BootlaceAppDelegate.h; sourceTree = "<group>"; };
 		D2F9A2951381A07B00D6CAF8 /* BootlaceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BootlaceAppDelegate.m; sourceTree = "<group>"; };
 		D796127F1382AF2A003FA9BA /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
-		D7E476D01382ADA3004C0072 /* BLGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; path = BLGlobals.h; sourceTree = "<group>"; };
+		D7E476D01382ADA3004C0072 /* BLGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGlobals.h; sourceTree = "<group>"; };
 		D7E476D11382ADA3004C0072 /* BLGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGlobals.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
