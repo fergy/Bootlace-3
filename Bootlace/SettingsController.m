@@ -13,7 +13,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        UIImage* image = [UIImage imageNamed:@"191-collection.png"];
+        UIImage* image = [UIImage imageNamed:@"158-wrench-2.png"];
         self.tabBarItem = [[[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"Settings",nil) image:image tag:0] autorelease];
 		self.title = NSLocalizedString(@"Settings",nil);
 		self.variableHeightRows = YES;

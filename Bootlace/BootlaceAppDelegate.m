@@ -12,6 +12,7 @@
 #import "InstallListController.h"
 #import "QuickBootController.h"
 #import "SettingsController.h"
+#import "FeedItemController.h"
 
 @implementation BootlaceAppDelegate
 
@@ -28,7 +29,8 @@
     [map from:@"bl://installList" toSharedViewController:[InstallListController class]];
     [map from:@"bl://quickboot" toSharedViewController:[QuickBootController class]];
     [map from:@"bl://settings" toSharedViewController:[SettingsController class]];
-    
+    [map from:@"bl://viewfeeditem" toSharedViewController:[FeedItemController class]];
+    // Check pre-requisites here - show wizard if compatible & firstrun, if incompatible show canhaznot screen, otherwise run the condition below
     if (![navigator restoreViewControllers]) {
 		[navigator openURLAction:[TTURLAction actionWithURLPath:@"bl://tabBar"]];
 	}

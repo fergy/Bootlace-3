@@ -6,11 +6,8 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-
-@interface InstallListController : TTTableViewController {
-    
+@interface InstallListController : TTTableViewController<TTTabDelegate> {
+    TTTabStrip* _listTabs;
 }
 
 @end

@@ -11,7 +11,7 @@
 
 @implementation BLStylesheet
 
-- (UIColor*)navigationBarTintColor {
+/*- (UIColor*)navigationBarTintColor {
 	return RGBCOLOR(44, 44, 44);
 }
 
@@ -19,9 +19,9 @@
 	return RGBCOLOR(72,72,72);
 }
 
-/*- (UIFont*)font {
+- (UIFont*)font {
 	return [UIFont fontWithName:@"AmericanTypewriter" size:14];
-}*/
+}
 
 - (UIColor*)toolbarTintColor {
 	return RGBCOLOR(72,72,72);
@@ -42,6 +42,6 @@
 - (UITableViewCellSelectionStyle)tableSelectionStyle {
 	return UITableViewCellSelectionStyleGray;
 }
-
+*/
 
 @end
