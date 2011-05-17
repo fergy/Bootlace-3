@@ -47,6 +47,7 @@
 		D2F9A2931381A07B00D6CAF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A2921381A07B00D6CAF8 /* main.m */; };
 		D2F9A2961381A07B00D6CAF8 /* BootlaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A2951381A07B00D6CAF8 /* BootlaceAppDelegate.m */; };
 		D7E476D21382ADA3004C0072 /* BLGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E476D11382ADA3004C0072 /* BLGlobals.m */; };
+		D7FB0CE31382BCA00008DA54 /* BLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB0CE21382BCA00008DA54 /* BLUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -223,6 +224,8 @@
 		D796127F1382AF2A003FA9BA /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		D7E476D01382ADA3004C0072 /* BLGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLGlobals.h; sourceTree = "<group>"; };
 		D7E476D11382ADA3004C0072 /* BLGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGlobals.m; sourceTree = "<group>"; };
+		D7FB0CE11382BCA00008DA54 /* BLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLUtilities.h; sourceTree = "<group>"; };
+		D7FB0CE21382BCA00008DA54 /* BLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLUtilities.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,8 +338,6 @@
 			children = (
 				D22AFB4913828339005AACFE /* NewsDataSource.h */,
 				D22AFB4A13828339005AACFE /* NewsDataSource.m */,
-				D7E476D01382ADA3004C0072 /* BLGlobals.h */,
-				D7E476D11382ADA3004C0072 /* BLGlobals.m */,
 			);
 			name = Datasources;
 			sourceTree = "<group>";
@@ -471,6 +472,7 @@
 		D2F9A28B1381A07B00D6CAF8 /* Bootlace */ = {
 			isa = PBXGroup;
 			children = (
+				D7FB0CE01382BC7E0008DA54 /* Common */,
 				D22AFB4813828329005AACFE /* Datasources */,
 				D22AFB40138282AB005AACFE /* Models */,
 				D261DED91381AB6300E70E49 /* UI */,
@@ -503,6 +505,17 @@
 			);
 			path = 3rdparty;
 			sourceTree = SOURCE_ROOT;
+		};
+		D7FB0CE01382BC7E0008DA54 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D7E476D01382ADA3004C0072 /* BLGlobals.h */,
+				D7E476D11382ADA3004C0072 /* BLGlobals.m */,
+				D7FB0CE11382BCA00008DA54 /* BLUtilities.h */,
+				D7FB0CE21382BCA00008DA54 /* BLUtilities.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -738,6 +751,7 @@
 				D2CD97DD13828C5D0028979F /* FeedItemController.m in Sources */,
 				D7E476D21382ADA3004C0072 /* BLGlobals.m in Sources */,
 				D23238F21382B67200330569 /* BLWebController.m in Sources */,
+				D7FB0CE31382BCA00008DA54 /* BLUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

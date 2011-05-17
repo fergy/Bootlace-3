@@ -37,10 +37,11 @@
     BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
     
     sharedBLGlobals.deviceCompatible = [[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"];
+    sharedBLGlobals.oldBootrom = [[NSUserDefaults standardUserDefaults] boolForKey:@"OldBootrom"];
     
-    if(!NO) {
+    if(!sharedBLGlobals.deviceCompatible) {
         //Do checks
-    } else if([[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"] && [[NSUserDefaults standardUserDefaults] boolForKey:@"OldBootrom"]) {
+    } else if(sharedBLGlobals.deviceCompatible && sharedBLGlobals.oldBootrom) {
         //Check kernel is still patched
     }
     
