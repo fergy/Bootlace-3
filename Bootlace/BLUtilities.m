@@ -11,4 +11,8 @@
 
 @implementation BLUtilities
 
+- (NSString *)getDevice {
+    
+}
+
 @end

@@ -17,6 +17,7 @@
     bool oldBootrom;
     
     NSString *device;
+    NSString *deviceName;
 }
 
 + (BLGlobals *)sharedBLGlobals;
@@ -25,5 +26,6 @@
 @property (nonatomic, assign) bool oldBootrom;
 
 @property (nonatomic, retain) NSString *device;
+@property (nonatomic, retain) NSString *deviceName;
 
 @end

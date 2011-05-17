@@ -13,6 +13,6 @@
 
 SYNTHESIZE_SINGLETON_FOR_CLASS(BLGlobals);
 
-@synthesize deviceCompatible, oldBootrom, device;
+@synthesize deviceCompatible, oldBootrom, device, deviceName;
 
 @end
