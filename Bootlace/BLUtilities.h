@@ -14,4 +14,7 @@
     
 }
 
+- (NSString *)getDevice;
+- (BOOL)checkBattery;
+
 @end

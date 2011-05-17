@@ -80,4 +80,10 @@
 	}
 }
 
+- (BOOL)checkBattery {
+	[[UIDevice currentDevice] setBatteryMonitoringEnabled:YES];
+      
+	return ([[UIDevice currentDevice] batteryState] == UIDeviceBatteryStateCharging || [[UIDevice currentDevice] batteryState] == UIDeviceBatteryStateFull);
+}
+
 @end
