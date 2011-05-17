@@ -13,6 +13,7 @@
 #import "QuickBootController.h"
 #import "SettingsController.h"
 #import "FeedItemController.h"
+#import "BLGlobals.h"
 
 @implementation BootlaceAppDelegate
 
@@ -32,9 +33,11 @@
     [map from:@"bl://viewfeeditem" toSharedViewController:[FeedItemController class]];
     
     // Check pre-requisites here - show wizard if compatible & firstrun, if incompatible show canhaznot screen, otherwise run the condition below
+    BLGlobals *sharedGlobals = [BLGlobals sharedGlobals];
     
+    sharedGlobals.deviceCompatible = [[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"];
     
-    if(![[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"]) {
+    if(!NO) {
         //Do checks
     } else if([[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"] && [[NSUserDefaults standardUserDefaults] boolForKey:@"OldBootrom"]) {
         //Check kernel is still patched
