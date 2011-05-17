@@ -39,6 +39,7 @@
 		D261DF0D1381BBB700E70E49 /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D261DF0C1381BBB700E70E49 /* SettingsController.m */; };
 		D261DF141381BCF500E70E49 /* centerbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D261DF121381BCF500E70E49 /* centerbutton.png */; };
 		D261DF151381BCF500E70E49 /* centerbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D261DF131381BCF500E70E49 /* centerbutton@2x.png */; };
+		D270EAF41383099E003DC39F /* PackagesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D270EAF31383099E003DC39F /* PackagesDataSource.m */; };
 		D2CD97DD13828C5D0028979F /* FeedItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD97DC13828C5D0028979F /* FeedItemController.m */; };
 		D2F9A2861381A07B00D6CAF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9A2851381A07B00D6CAF8 /* UIKit.framework */; };
 		D2F9A2881381A07B00D6CAF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9A2871381A07B00D6CAF8 /* Foundation.framework */; };
@@ -210,6 +211,8 @@
 		D261DF0C1381BBB700E70E49 /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		D261DF121381BCF500E70E49 /* centerbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centerbutton.png; sourceTree = "<group>"; };
 		D261DF131381BCF500E70E49 /* centerbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "centerbutton@2x.png"; sourceTree = "<group>"; };
+		D270EAF21383099E003DC39F /* PackagesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PackagesDataSource.h; path = Classes/PackagesDataSource.h; sourceTree = "<group>"; };
+		D270EAF31383099E003DC39F /* PackagesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PackagesDataSource.m; path = Classes/PackagesDataSource.m; sourceTree = "<group>"; };
 		D29E4DA51382C0DA0080CD50 /* BLDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLDeviceType.h; path = Classes/BLDeviceType.h; sourceTree = "<group>"; };
 		D2CD97DB13828C5D0028979F /* FeedItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedItemController.h; path = Classes/FeedItemController.h; sourceTree = "<group>"; };
 		D2CD97DC13828C5D0028979F /* FeedItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedItemController.m; path = Classes/FeedItemController.m; sourceTree = "<group>"; };
@@ -342,6 +345,8 @@
 			children = (
 				D22AFB4913828339005AACFE /* NewsDataSource.h */,
 				D22AFB4A13828339005AACFE /* NewsDataSource.m */,
+				D270EAF21383099E003DC39F /* PackagesDataSource.h */,
+				D270EAF31383099E003DC39F /* PackagesDataSource.m */,
 			);
 			name = Datasources;
 			sourceTree = "<group>";
@@ -758,6 +763,7 @@
 				D7E476D21382ADA3004C0072 /* BLGlobals.m in Sources */,
 				D23238F21382B67200330569 /* BLWebController.m in Sources */,
 				D7FB0CE31382BCA00008DA54 /* BLUtilities.m in Sources */,
+				D270EAF41383099E003DC39F /* PackagesDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
