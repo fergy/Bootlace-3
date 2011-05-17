@@ -48,6 +48,7 @@
 		D2F9A2961381A07B00D6CAF8 /* BootlaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F9A2951381A07B00D6CAF8 /* BootlaceAppDelegate.m */; };
 		D7E476D21382ADA3004C0072 /* BLGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = D7E476D11382ADA3004C0072 /* BLGlobals.m */; };
 		D7FB0CE31382BCA00008DA54 /* BLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FB0CE21382BCA00008DA54 /* BLUtilities.m */; };
+		D7FB0DC11382DB6D0008DA54 /* IOKit in Frameworks */ = {isa = PBXBuildFile; fileRef = D7FB0DC01382DB6D0008DA54 /* IOKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -227,6 +228,7 @@
 		D7E476D11382ADA3004C0072 /* BLGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLGlobals.m; sourceTree = "<group>"; };
 		D7FB0CE11382BCA00008DA54 /* BLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLUtilities.h; sourceTree = "<group>"; };
 		D7FB0CE21382BCA00008DA54 /* BLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLUtilities.m; sourceTree = "<group>"; };
+		D7FB0DC01382DB6D0008DA54 /* IOKit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = IOKit; path = ../../../../System/Library/Frameworks/IOKit.framework/Versions/A/IOKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +236,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7FB0DC11382DB6D0008DA54 /* IOKit in Frameworks */,
 				D255F6DC1382863900B2682B /* libextThree20XML.a in Frameworks */,
 				3201088596B4756681693705 /* libThree20UICommon.a in Frameworks */,
 				320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */,
@@ -436,6 +439,7 @@
 		D2F9A2761381A07B00D6CAF8 = {
 			isa = PBXGroup;
 			children = (
+				D7FB0DC01382DB6D0008DA54 /* IOKit */,
 				D255F6DB1382863900B2682B /* libextThree20XML.a */,
 				D2F9A28B1381A07B00D6CAF8 /* Bootlace */,
 				D2F9A2841381A07B00D6CAF8 /* Frameworks */,
@@ -828,6 +832,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/IOKit.framework/Versions/A\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -846,6 +851,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/IOKit.framework/Versions/A\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALIDATE_PRODUCT = YES;

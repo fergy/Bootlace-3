@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <IOKit/IOKitLib.h>
 #import "BLGlobals.h"
 
 
@@ -14,7 +15,8 @@
     
 }
 
-- (NSString *)getDevice;
+- (int)getDevice;
+- (NSString *)getSerial;
 - (BOOL)checkBattery;
 
 @end

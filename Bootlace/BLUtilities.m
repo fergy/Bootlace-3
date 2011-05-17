@@ -11,7 +11,7 @@
 
 @implementation BLUtilities
 
-- (NSString *)getDevice {
+- (int)getDevice {
     BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
 	
     size_t size;
@@ -78,6 +78,45 @@
 	} else {
 		sharedBLGlobals.deviceName = @"Unknown Device";
 	}
+    
+    return 0;
+}
+
+- (NSString *)getSerial {
+    BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
+    
+    NSString *serial;
+    
+    kern_return_t   kr;
+	io_iterator_t   io_objects;
+	io_service_t    io_service;
+	
+	//CFMutableDictionaryRef child_props;
+	CFMutableDictionaryRef service_properties;
+	
+	kr = IOServiceGetMatchingServices(kIOMasterPortDefault, IOServiceMatching("IOPlatformExpertDevice"), &io_objects);
+	
+	if(kr != KERN_SUCCESS)
+		return nil;
+	
+	while((io_service= IOIteratorNext(io_objects)))
+	{
+		kr = IORegistryEntryCreateCFProperties(io_service, &service_properties, kCFAllocatorDefault, kNilOptions);
+		if(kr == KERN_SUCCESS)
+		{
+			NSDictionary *deviceProps = (NSDictionary *)service_properties;
+            
+            //Extract Serial
+            serial = [deviceProps objectForKey:@"serial-number"];
+            NSLog(@"Serial: %@", serial);
+            
+            CFRelease(service_properties);
+		}
+		IOObjectRelease(io_service);
+	}
+	IOObjectRelease(io_objects);
+    
+    return serial;
 }
 
 - (BOOL)checkBattery {

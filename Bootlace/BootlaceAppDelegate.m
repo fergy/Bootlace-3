@@ -15,6 +15,7 @@
 #import "FeedItemController.h"
 #import "BLGlobals.h"
 #import "BLWebController.h"
+#import "BLUtilities.h"
 
 @implementation BootlaceAppDelegate
 
@@ -35,12 +36,15 @@
     
     // Check pre-requisites here - show wizard if compatible & firstrun, if incompatible show canhaznot screen, otherwise run the condition below
     BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
+    BLUtilities *utilities = [[BLUtilities alloc] init];
     
     sharedBLGlobals.deviceCompatible = [[NSUserDefaults standardUserDefaults] boolForKey:@"DeviceCompatible"];
     sharedBLGlobals.oldBootrom = [[NSUserDefaults standardUserDefaults] boolForKey:@"OldBootrom"];
     
     if(!sharedBLGlobals.deviceCompatible) {
         //Do checks
+        [utilities getSerial];
+        [utilities getDevice];
     } else if(sharedBLGlobals.deviceCompatible && sharedBLGlobals.oldBootrom) {
         //Check kernel is still patched
     }
