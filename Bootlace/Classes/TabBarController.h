@@ -11,5 +11,5 @@
 }
 
 -(void) addCenterButtonWithImage:(UIImage*)buttonImage highlightImage:(UIImage*)highlightImage;
-
+-(void) quickBoot:(id) sender;
 @end

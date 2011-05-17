@@ -16,6 +16,13 @@
 		320CC833B8AF0ACFD35E6225 /* libThree20Style.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320CC833B8AF0ACFD35E6224 /* libThree20Style.a */; };
 		320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D7DCCE32703ACAB9A45E4 /* libThree20.a */; };
 		320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320F2C48872C2E2C4DF86204 /* libThree20UI.a */; };
+		D22AFB2F138269FE005AACFE /* BLStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = D22AFB2E138269FE005AACFE /* BLStylesheet.m */; };
+		D22AFB321382739C005AACFE /* centerbuttonon.png in Resources */ = {isa = PBXBuildFile; fileRef = D22AFB301382739C005AACFE /* centerbuttonon.png */; };
+		D22AFB331382739C005AACFE /* centerbuttonon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22AFB311382739C005AACFE /* centerbuttonon@2x.png */; };
+		D22AFB361382754A005AACFE /* ix.png in Resources */ = {isa = PBXBuildFile; fileRef = D22AFB341382754A005AACFE /* ix.png */; };
+		D22AFB371382754A005AACFE /* ix@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22AFB351382754A005AACFE /* ix@2x.png */; };
+		D22AFB3A1382760F005AACFE /* idroid.png in Resources */ = {isa = PBXBuildFile; fileRef = D22AFB381382760F005AACFE /* idroid.png */; };
+		D22AFB3B1382760F005AACFE /* idroid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D22AFB391382760F005AACFE /* idroid@2x.png */; };
 		D261DEDC1381ABC400E70E49 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D261DEDB1381ABC400E70E49 /* TabBarController.m */; };
 		D261DEF71381AF5600E70E49 /* InstallListController.m in Sources */ = {isa = PBXBuildFile; fileRef = D261DEF61381AF5600E70E49 /* InstallListController.m */; };
 		D261DEFB1381B1EA00E70E49 /* QuickBootController.m in Sources */ = {isa = PBXBuildFile; fileRef = D261DEFA1381B1EA00E70E49 /* QuickBootController.m */; };
@@ -192,6 +199,14 @@
 		320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Style.xcodeproj; path = 3rdparty/three20/src/Three20Style/Three20Style.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = 3rdparty/three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = 3rdparty/three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D22AFB2D138269FE005AACFE /* BLStylesheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLStylesheet.h; path = Classes/BLStylesheet.h; sourceTree = "<group>"; };
+		D22AFB2E138269FE005AACFE /* BLStylesheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLStylesheet.m; path = Classes/BLStylesheet.m; sourceTree = "<group>"; };
+		D22AFB301382739C005AACFE /* centerbuttonon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = centerbuttonon.png; sourceTree = "<group>"; };
+		D22AFB311382739C005AACFE /* centerbuttonon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "centerbuttonon@2x.png"; sourceTree = "<group>"; };
+		D22AFB341382754A005AACFE /* ix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ix.png; sourceTree = "<group>"; };
+		D22AFB351382754A005AACFE /* ix@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ix@2x.png"; sourceTree = "<group>"; };
+		D22AFB381382760F005AACFE /* idroid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idroid.png; sourceTree = "<group>"; };
+		D22AFB391382760F005AACFE /* idroid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "idroid@2x.png"; sourceTree = "<group>"; };
 		D261DEDA1381ABC400E70E49 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarController.h; path = Classes/TabBarController.h; sourceTree = "<group>"; };
 		D261DEDB1381ABC400E70E49 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarController.m; path = Classes/TabBarController.m; sourceTree = "<group>"; };
 		D261DEF51381AF5600E70E49 /* InstallListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InstallListController.h; path = Classes/InstallListController.h; sourceTree = "<group>"; };
@@ -317,6 +332,8 @@
 			children = (
 				D261DEDA1381ABC400E70E49 /* TabBarController.h */,
 				D261DEDB1381ABC400E70E49 /* TabBarController.m */,
+				D22AFB2D138269FE005AACFE /* BLStylesheet.h */,
+				D22AFB2E138269FE005AACFE /* BLStylesheet.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -351,6 +368,12 @@
 		D261DF011381B68400E70E49 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				D22AFB381382760F005AACFE /* idroid.png */,
+				D22AFB391382760F005AACFE /* idroid@2x.png */,
+				D22AFB341382754A005AACFE /* ix.png */,
+				D22AFB351382754A005AACFE /* ix@2x.png */,
+				D22AFB301382739C005AACFE /* centerbuttonon.png */,
+				D22AFB311382739C005AACFE /* centerbuttonon@2x.png */,
 				D261DF121381BCF500E70E49 /* centerbutton.png */,
 				D261DF131381BCF500E70E49 /* centerbutton@2x.png */,
 			);
@@ -617,6 +640,12 @@
 				D261DF001381B34E00E70E49 /* 191-collection@2x.png in Resources */,
 				D261DF141381BCF500E70E49 /* centerbutton.png in Resources */,
 				D261DF151381BCF500E70E49 /* centerbutton@2x.png in Resources */,
+				D22AFB321382739C005AACFE /* centerbuttonon.png in Resources */,
+				D22AFB331382739C005AACFE /* centerbuttonon@2x.png in Resources */,
+				D22AFB361382754A005AACFE /* ix.png in Resources */,
+				D22AFB371382754A005AACFE /* ix@2x.png in Resources */,
+				D22AFB3A1382760F005AACFE /* idroid.png in Resources */,
+				D22AFB3B1382760F005AACFE /* idroid@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +662,7 @@
 				D261DEF71381AF5600E70E49 /* InstallListController.m in Sources */,
 				D261DEFB1381B1EA00E70E49 /* QuickBootController.m in Sources */,
 				D261DF0D1381BBB700E70E49 /* SettingsController.m in Sources */,
+				D22AFB2F138269FE005AACFE /* BLStylesheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

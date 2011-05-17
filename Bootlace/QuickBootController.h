@@ -9,8 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-@interface QuickBootController : TTTableViewController {
-    
+@interface QuickBootController : TTViewController <TTLauncherViewDelegate, TTActionSheetControllerDelegate> {
+    TTLauncherView* _launcherView;
 }
+
+-(void) getBootableOS;
 
 @end

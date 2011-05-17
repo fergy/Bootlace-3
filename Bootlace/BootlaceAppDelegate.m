@@ -7,6 +7,7 @@
 //
 
 #import "BootlaceAppDelegate.h"
+#import "BLStylesheet.h"
 #import "TabBarController.h"
 #import "InstallListController.h"
 #import "QuickBootController.h"
@@ -16,6 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [TTStyleSheet setGlobalStyleSheet:[[[BLStylesheet alloc] init] autorelease]];
     TTNavigator* navigator = [TTNavigator navigator];
 	navigator.persistenceMode = TTNavigatorPersistenceModeAll;
     
