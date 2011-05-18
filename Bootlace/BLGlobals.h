@@ -6,7 +6,6 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "SynthesizeSingleton.h"
 #import "BLDeviceType.h"
 

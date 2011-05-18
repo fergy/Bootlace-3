@@ -8,7 +8,6 @@
 
 #import "SettingsController.h"
 
-
 @implementation SettingsController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {

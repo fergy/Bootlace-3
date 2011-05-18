@@ -11,7 +11,7 @@
 
 @implementation BLUtilities
 
-- (int)getDevice {
+- (NSInteger)getDevice {
     BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
 	
     size_t size;
@@ -83,7 +83,7 @@
 }
 
 - (NSString *)getSerial {
-    BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
+    //BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
     
     NSString *serial;
     

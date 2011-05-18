@@ -8,7 +8,6 @@
 
 #import "QuickBootController.h"
 
-
 @implementation QuickBootController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {

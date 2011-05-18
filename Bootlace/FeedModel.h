@@ -7,8 +7,8 @@
 //
 
 @interface FeedModel : TTURLRequestModel {
-	NSString* _feedUrl;
-	NSArray*  _items;
+	NSString *_feedUrl;
+	NSArray  *_items;
 }
 
 @property (nonatomic, copy)     NSString* feedUrl;

@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#include <sys/sysctl.h>
+#import <sys/sysctl.h> // This shuts up a warning about sysctlbyname
 #import <IOKit/IOKitLib.h>
 #import "BLGlobals.h"
 
@@ -15,7 +15,7 @@
     
 }
 
-- (int)getDevice;
+- (NSInteger)getDevice;
 - (NSString *)getSerial;
 - (BOOL)checkBattery;
 
