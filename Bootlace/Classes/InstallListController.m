@@ -50,14 +50,14 @@ exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
     //self.dataSource = [[[OSDataSource alloc] initWithDevice:@"iPhone1,2"] autorelease];
     
     self.dataSource = [TTSectionedDataSource dataSourceWithObjects:
-                       @"iDroid",
-                       [TTTableMessageItem itemWithTitle:@"Pepparkaka 11.04" caption:@"Android 2.3.2"
+                       @"Android",
+                       [TTTableMessageItem itemWithTitle:@"iDroid Pepparkaka" caption:@"Android 2.3.2"
                                                     text:kLoremIpsum timestamp:[NSDate date]
                                                 imageURL:@"bundle://idroid.png" URL:@"tt://tableItemTest"],
-                       [TTTableMessageItem itemWithTitle:@"MoJo 1.0.4" caption:@"Android 2.2.3"
+                       [TTTableMessageItem itemWithTitle:@"iDroid MoJo" caption:@"Android 2.2.3"
                                                     text:kLoremIpsum timestamp:[NSDate date]
                                                 imageURL:@"bundle://idroid.png" URL:@"tt://tableItemTest"],
-                       @"iX",
+                       @"Linux",
                        [TTTableMessageItem itemWithTitle:@"iX SHR" caption:@"SHR something"
                                                     text:kLoremIpsum timestamp:[NSDate date]
                                                 imageURL:@"bundle://ix.png" URL:@"tt://tableItemTest"],

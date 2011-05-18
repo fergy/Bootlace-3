@@ -409,6 +409,8 @@
 		D261DEFC1381B22A00E70E49 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
+				D22AFB3C1382817C005AACFE /* 158-wrench-2.png */,
+				D22AFB3D1382817C005AACFE /* 158-wrench-2@2x.png */,
 				D261DEFD1381B34E00E70E49 /* 191-collection.png */,
 				D261DEFE1381B34E00E70E49 /* 191-collection@2x.png */,
 			);
@@ -418,8 +420,6 @@
 		D261DF011381B68400E70E49 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
-				D22AFB3C1382817C005AACFE /* 158-wrench-2.png */,
-				D22AFB3D1382817C005AACFE /* 158-wrench-2@2x.png */,
 				D22AFB381382760F005AACFE /* idroid.png */,
 				D22AFB391382760F005AACFE /* idroid@2x.png */,
 				D22AFB341382754A005AACFE /* ix.png */,

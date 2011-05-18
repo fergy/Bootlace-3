@@ -12,11 +12,11 @@
 @implementation BLStylesheet
 
 - (UIColor*)navigationBarTintColor {
-	return RGBCOLOR(105, 149, 0);
+	return RGBCOLOR(164, 198, 57);
 }
 
 -(UIColor*)tabBarTintColor {
-	return RGBCOLOR(105, 149, 0);
+	return RGBCOLOR(164, 198, 57);
 }
 
 /*- (UIFont*)font {
@@ -24,11 +24,11 @@
 }*/
 
 - (UIColor*)toolbarTintColor {
-	return RGBCOLOR(105, 149, 0);
+	return RGBCOLOR(164, 198, 57);
 }
 
 - (UIColor*)tableHeaderTintColor {
-	return RGBCOLOR(105, 149, 0);
+	return RGBCOLOR(164, 198, 57);
 }
 
 - (UIColor*)tableHeaderTextColor {

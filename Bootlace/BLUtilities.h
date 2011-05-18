@@ -6,7 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#include <sys/sysctl.h>
 #import <IOKit/IOKitLib.h>
 #import "BLGlobals.h"
 
