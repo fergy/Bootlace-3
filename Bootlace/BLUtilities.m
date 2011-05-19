@@ -122,6 +122,25 @@
     return serial;
 }
 
+- (int)getBootrom:(NSString *)serial {
+    //0 is old, 1 is new - add more if needed
+    int bootrom;
+    NSString *mfrDate;
+    
+    mfrDate = [serial substringWithRange:NSMakeRange(2, 3)];
+    
+    if([mfrDate intValue] < 300 || [mfrDate intValue] > 940) {
+        //Manufacture week was 2010/11 or late 2009 so must be new bootrom
+        bootrom = 1;
+    } else {
+        bootrom = 0;
+    }
+        
+    NSLog(@"MFRD: %d", [mfrDate intValue]);
+    
+    return bootrom;
+}
+
 - (BOOL)checkBattery {
 	[[UIDevice currentDevice] setBatteryMonitoringEnabled:YES];
       

@@ -45,6 +45,7 @@
         //Do checks
         [utilities getSerial];
         [utilities getDevice];
+        NSLog(@"Bootrom: %d",[utilities getBootrom:@"83028BD3A4S"]);
     } else if(sharedBLGlobals.deviceCompatible && sharedBLGlobals.oldBootrom) {
         //Additional checks
     }
