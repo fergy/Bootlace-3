@@ -24,8 +24,8 @@
 }
 
 - (NSInteger)getDevice;
-- (NSString *)getSerial;
-- (int)getBootrom:(NSString *)serial;
+- (NSString *)getDeviceProperty:(NSString *)key;
+- (int)getBootrom:(NSString *)serialOrModel;
 - (float)getFirmwareVersion;
 - (BOOL)checkBattery;
 - (void)toggleAirplaneMode;

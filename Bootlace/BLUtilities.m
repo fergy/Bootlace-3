@@ -86,8 +86,8 @@
     return [[[UIDevice currentDevice] systemVersion] floatValue];
 }
 
-- (NSString *)getSerial {
-    NSString *serial;
+- (NSString *)getDeviceProperty:(NSString *)key {
+    NSString *result;
     
     kern_return_t   kr;
 	io_iterator_t   io_objects;
@@ -109,9 +109,7 @@
 			NSDictionary *deviceProps = (NSDictionary *)service_properties;
             
             //Extract Serial
-            serial = [NSString stringWithCString:[[deviceProps objectForKey:@"serial-number"] bytes] encoding:NSUTF8StringEncoding];
-            
-            ALog(@"Serial: %@", serial);
+            result = [NSString stringWithCString:[[deviceProps objectForKey:key] bytes] encoding:NSUTF8StringEncoding];
             
             CFRelease(service_properties);
 		}
@@ -119,24 +117,35 @@
 	}
 	IOObjectRelease(io_objects);
     
-    return serial;
+    return result;
 }
 
-- (int)getBootrom:(NSString *)serial {
+- (int)getBootrom:(NSString *)serialOrModel {
+    BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
+    
     //0 is old, 1 is new - add more if needed
     int bootrom;
     NSString *mfrDate;
     
-    mfrDate = [serial substringWithRange:NSMakeRange(2, 3)];
-    
-    if([mfrDate intValue] < 300 || [mfrDate intValue] > 940) {
-        //Manufacture week was 2010/11 or late 2009 so must be new bootrom
-        bootrom = 1;
-    } else {
-        bootrom = 0;
-    }
+    if(sharedBLGlobals.deviceType == IPHONE2_1) {
+        //3GS check
+        mfrDate = [serialOrModel substringWithRange:NSMakeRange(2, 3)];
         
-    NSLog(@"MFRD: %d", [mfrDate intValue]);
+        if([mfrDate intValue] < 300 || [mfrDate intValue] > 940) {
+            //Manufacture week was 2010/11 or late 2009 so must be new bootrom
+            bootrom = 1;
+        } else {
+            bootrom = 0;
+        }
+    } else if(sharedBLGlobals.deviceType == IPOD2_1) {
+        //iPT2G check
+        if([[serialOrModel substringWithRange:NSMakeRange(1, 1)] isEqualToString:@"C"]) {
+            //MC model, new bootrom
+            bootrom = 1;
+        } else {
+            bootrom = 0;
+        }
+    }
     
     return bootrom;
 }

@@ -43,7 +43,15 @@
     
     if(!sharedBLGlobals.deviceCompatible) {
         //Do checks
-        [utilities getSerial];
+        NSString *serial, *model;
+        
+        serial = [utilities getDeviceProperty:@"serial-number"];
+        ALog(@"Serial number: %@", serial);
+        
+        //Crashes simulator
+        //model = [utilities getDeviceProperty:@"model-number"];
+        //ALog(@"Model number: %@", model);
+        
         [utilities getDevice];
         NSLog(@"Bootrom: %d",[utilities getBootrom:@"83028BD3A4S"]);
     } else if(sharedBLGlobals.deviceCompatible && sharedBLGlobals.oldBootrom) {
