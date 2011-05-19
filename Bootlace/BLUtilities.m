@@ -25,7 +25,7 @@
 	
 	/* Catch simulator */
 	if ([sharedBLGlobals.device isEqualToString:@"x86_64"] || [sharedBLGlobals.device isEqualToString:@"i386"]) {
-		sharedBLGlobals.device = @"iPhone1,2";
+		sharedBLGlobals.device = @"iPhone2,1";
         sharedBLGlobals.deviceName = @"iOS Simulator";
 	}
     
