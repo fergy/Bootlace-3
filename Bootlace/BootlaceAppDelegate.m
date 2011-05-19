@@ -46,7 +46,7 @@
         [utilities getSerial];
         [utilities getDevice];
     } else if(sharedBLGlobals.deviceCompatible && sharedBLGlobals.oldBootrom) {
-        //Check kernel is still patched
+        //Additional checks
     }
     
     if (![navigator restoreViewControllers]) {

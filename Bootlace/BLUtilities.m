@@ -109,7 +109,8 @@
 			NSDictionary *deviceProps = (NSDictionary *)service_properties;
             
             //Extract Serial
-            serial = [deviceProps objectForKey:@"serial-number"];
+            serial = [NSString stringWithCString:[[deviceProps objectForKey:@"serial-number"] bytes] encoding:NSUTF8StringEncoding];
+            
             ALog(@"Serial: %@", serial);
             
             CFRelease(service_properties);
