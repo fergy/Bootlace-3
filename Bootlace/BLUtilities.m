@@ -82,9 +82,11 @@
     return 0;
 }
 
+- (float)getFirmwareVersion {
+    return [[[UIDevice currentDevice] systemVersion] floatValue];
+}
+
 - (NSString *)getSerial {
-    //BLGlobals *sharedBLGlobals = [BLGlobals sharedBLGlobals];
-    
     NSString *serial;
     
     kern_return_t   kr;
@@ -108,7 +110,7 @@
             
             //Extract Serial
             serial = [deviceProps objectForKey:@"serial-number"];
-            NSLog(@"Serial: %@", serial);
+            ALog(@"Serial: %@", serial);
             
             CFRelease(service_properties);
 		}
@@ -123,6 +125,25 @@
 	[[UIDevice currentDevice] setBatteryMonitoringEnabled:YES];
       
 	return ([[UIDevice currentDevice] batteryState] == UIDeviceBatteryStateCharging || [[UIDevice currentDevice] batteryState] == UIDeviceBatteryStateFull);
+}
+
+
+- (void)toggleAirplaneMode {
+	    
+	if(TTDeviceOSVersionIsAtLeast(478.52)) {
+		void *libHandle = dlopen("/System/Library/Frameworks/CoreTelephony.framework/CoreTelephony", RTLD_LAZY);
+	    int (*AirplaneMode)() = dlsym(libHandle, "CTPowerGetAirplaneMode");
+		int (*enable)(int mode) = dlsym(libHandle, "CTPowerSetAirplaneMode");
+        
+		int status = AirplaneMode();
+        
+		if(status) {
+			enable(0);
+		} else {
+			enable(1);
+		}
+	}
+    
 }
 
 @end

@@ -40,6 +40,7 @@
 		D261DF141381BCF500E70E49 /* centerbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D261DF121381BCF500E70E49 /* centerbutton.png */; };
 		D261DF151381BCF500E70E49 /* centerbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D261DF131381BCF500E70E49 /* centerbutton@2x.png */; };
 		D270EAF41383099E003DC39F /* PackagesDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D270EAF31383099E003DC39F /* PackagesDataSource.m */; };
+		D2BA1C9F1385002B00C6FA59 /* BLMD5Category.m in Sources */ = {isa = PBXBuildFile; fileRef = D2BA1C9E1385002B00C6FA59 /* BLMD5Category.m */; };
 		D2CD97DD13828C5D0028979F /* FeedItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CD97DC13828C5D0028979F /* FeedItemController.m */; };
 		D2F9A2861381A07B00D6CAF8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9A2851381A07B00D6CAF8 /* UIKit.framework */; };
 		D2F9A2881381A07B00D6CAF8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F9A2871381A07B00D6CAF8 /* Foundation.framework */; };
@@ -214,6 +215,8 @@
 		D270EAF21383099E003DC39F /* PackagesDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PackagesDataSource.h; path = Classes/PackagesDataSource.h; sourceTree = "<group>"; };
 		D270EAF31383099E003DC39F /* PackagesDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PackagesDataSource.m; path = Classes/PackagesDataSource.m; sourceTree = "<group>"; };
 		D29E4DA51382C0DA0080CD50 /* BLDeviceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLDeviceType.h; path = Classes/BLDeviceType.h; sourceTree = "<group>"; };
+		D2BA1C9D1385002B00C6FA59 /* BLMD5Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BLMD5Category.h; path = Classes/BLMD5Category.h; sourceTree = "<group>"; };
+		D2BA1C9E1385002B00C6FA59 /* BLMD5Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BLMD5Category.m; path = Classes/BLMD5Category.m; sourceTree = "<group>"; };
 		D2CD97DB13828C5D0028979F /* FeedItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedItemController.h; path = Classes/FeedItemController.h; sourceTree = "<group>"; };
 		D2CD97DC13828C5D0028979F /* FeedItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedItemController.m; path = Classes/FeedItemController.m; sourceTree = "<group>"; };
 		D2F9A2811381A07B00D6CAF8 /* Bootlace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bootlace.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -441,6 +444,15 @@
 			name = Settings;
 			sourceTree = "<group>";
 		};
+		D2BA1C9C1384FFAA00C6FA59 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D2BA1C9D1385002B00C6FA59 /* BLMD5Category.h */,
+				D2BA1C9E1385002B00C6FA59 /* BLMD5Category.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
 		D2F9A2761381A07B00D6CAF8 = {
 			isa = PBXGroup;
 			children = (
@@ -519,6 +531,7 @@
 		D7FB0CE01382BC7E0008DA54 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D2BA1C9C1384FFAA00C6FA59 /* Categories */,
 				D7E476D01382ADA3004C0072 /* BLGlobals.h */,
 				D7E476D11382ADA3004C0072 /* BLGlobals.m */,
 				D7FB0CE11382BCA00008DA54 /* BLUtilities.h */,
@@ -764,6 +777,7 @@
 				D23238F21382B67200330569 /* BLWebController.m in Sources */,
 				D7FB0CE31382BCA00008DA54 /* BLUtilities.m in Sources */,
 				D270EAF41383099E003DC39F /* PackagesDataSource.m in Sources */,
+				D2BA1C9F1385002B00C6FA59 /* BLMD5Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
