@@ -12,6 +12,8 @@ typedef enum
     IPHONE2_1, // 3GS
     IPHONE3_1, // 4 GSM
     IPHONE3_3, // 4 CDMA
+    IPHONE4_1, // 4S GSM
+    IPHONE4_2, // 4S CDMA
     IPOD1_1,   // IPT1G
     IPOD2_1,   // IPT2G
     IPOD3_1,   // IPT3G

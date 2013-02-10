@@ -45,6 +45,12 @@
     } else if([sharedBLGlobals.device isEqualToString:@"iPhone3,3"]) {
 		sharedBLGlobals.deviceName = @"iPhone 4 (CDMA)";
         sharedBLGlobals.deviceType = IPHONE3_3;
+    } else if([sharedBLGlobals.device isEqualToString:@"iPhone4,1"]) {
+		sharedBLGlobals.deviceName = @"iPhone 4S (GSM)";
+        sharedBLGlobals.deviceType = IPHONE4_1;
+    } else if([sharedBLGlobals.device isEqualToString:@"iPhone4,2"]) {
+		sharedBLGlobals.deviceName = @"iPhone 4S (CDMA)";
+        sharedBLGlobals.deviceType = IPHONE4_2;
 	} else if([sharedBLGlobals.device isEqualToString:@"iPod1,1"]) {
 		sharedBLGlobals.deviceName = @"iPod Touch";
         sharedBLGlobals.deviceType = IPOD1_1;
